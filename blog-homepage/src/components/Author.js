@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 import AuthorImage from './AuthorImage';
 import ArticleDateAndReadingTime from './ArticleDateAndReadingTime';
+import Bookmark from './Bookmark';
 
 const Author = (props) => {
-  const { authorData, postedDate, minutesToRead } = props
+  const { authorData, postedDate, minutesToRead, isBookmarked, handleBookmarkClick } = props
   const { name, image, isMediumMember } = authorData
 
   return (
@@ -24,9 +23,11 @@ const Author = (props) => {
         >
         </ArticleDateAndReadingTime>
       </div>
-      <div className={'bookmark'}>
-        <FontAwesomeIcon icon={faBookmark} />
-      </div>
+      <Bookmark
+        isBookmarked={isBookmarked}
+        handleBookmarkClick={handleBookmarkClick}
+      >
+      </Bookmark>
     </div>
   );
 }
@@ -35,6 +36,8 @@ Author.propTypes = {
   authorData: PropTypes.object.isRequired,
   postedDate: PropTypes.string.isRequired,
   minutesToRead: PropTypes.number.isRequired,
+  isBookmarked: PropTypes.bool.isRequired,
+  handleBookmarkClick: PropTypes.func.isRequired,
 }
 
 export default Author;
