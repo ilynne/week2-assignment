@@ -83,8 +83,17 @@
     }
     >.article-identifiers {
       color: dimgray;
+      display: grid;
+      grid-template-columns: 1fr 50px;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "first second";
+      >span {
+        grid-area: first;
+      }
       >span:nth-of-type(2) {
-        float: right;
+        grid-area: second;
+        text-align: right;
       }
     }
     >.author-container {
@@ -134,6 +143,10 @@
     color: dimgray;
     padding-right: 0;
   }
+}
+
+.article-date-reading {
+  color: dimgray;
 }
 
 .article-identifier-text {

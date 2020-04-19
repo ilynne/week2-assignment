@@ -20,7 +20,7 @@ const ArticleDateAndReadingTime = (props) => {
   const monthAndDate = `${articleMonthAbbreviation} ${articleDate.getDate()}`;
 
   return (
-    <p>{monthAndDate} &middot; {`${minutesToRead} min read`}</p>
+    <p className={'article-date-reading'}>{monthAndDate} &middot; {`${minutesToRead} min read`}</p>
   );
 }
 
