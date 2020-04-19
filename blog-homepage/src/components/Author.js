@@ -17,7 +17,7 @@ const Author = (props) => {
       >
       </AuthorImage>
       <div className={'author-name'}>
-        <p>{name}</p>
+        <p><b>{name}</b></p>
         <ArticleDateAndReadingTime
           postedDate={postedDate}
           minutesToRead={minutesToRead}

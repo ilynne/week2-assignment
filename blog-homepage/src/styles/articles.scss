@@ -82,6 +82,7 @@
       color: dimgray;
     }
     >.article-identifiers {
+      color: dimgray;
       >span:nth-of-type(2) {
         float: right;
       }
@@ -130,6 +131,8 @@
   .bookmark {
     grid-area: bookmark;
     text-align: right;
+    color: dimgray;
+    padding-right: 0;
   }
 }
 
