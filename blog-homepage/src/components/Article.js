@@ -7,6 +7,7 @@ const Article = (props) => {
   const { articleData } = props
   const { author,
           image,
+          link,
           title,
           description,
           postedDate,
@@ -17,15 +18,19 @@ const Article = (props) => {
   return (
     <div className={'article-container'}>
       <div className={'article-content'}>
-        <img src={image} alt={''} />
+        <a href={link}>
+          <img src={image} alt={''} />
+        </a>
         <article>
           <ArticleIdentifiers
             hasAudioAvailable={hasAudioAvailable}
             memberPreview={memberPreview}
           >
           </ArticleIdentifiers>
-          <h2>{title}</h2>
-          <p>{description}</p>
+          <a href={link}>
+            <h2>{title}</h2>
+            <p>{description}</p>
+          </a>
           <Author
             authorData={author}
             postedDate={postedDate}
