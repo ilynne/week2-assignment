@@ -170,3 +170,29 @@ a {
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .your-article-list, .missed-article-list {
+    >.article-list-container {
+      .article-container {
+        .article-content {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: 240px 240px;
+          grid-template-areas:
+            "image"
+            "article";
+          img {
+            grid-area: image;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+          article {
+            grid-area: article;
+          }
+        }
+      }
+    }
+  }
+}
