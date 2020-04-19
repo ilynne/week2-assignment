@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import './styles/articles.css'
+import './App.scss';
+import './styles/articles.scss'
 import yourArticles from './_data/your-articles.json';
 import missedArticles from './_data/missed-articles.json';
 import ArticleList from './components/ArticleList';

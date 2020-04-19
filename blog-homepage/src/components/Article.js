@@ -1,23 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Author from './Author';
 
 const Article = (props) => {
   const { articleData } = props
-  const { image, title, description } = articleData
+  const { author, image, title, description, postedDate, minutesToRead } = articleData
 
   return (
-    <article>
-      <img src={image} />
-      <h2>{title}</h2>
-      <p>{description}</p>
-    </article>
+    <div className={'article-container'}>
+      <div className={'article-content'}>
+        <img src={image} alt={''} />
+        <article>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <Author
+            authorData={author}
+            postedDate={postedDate}
+            minutesToRead={minutesToRead}
+          >
+          </Author>
+        </article>
+      </div>
+    </div>
   );
 }
 
 Article.propTypes = {
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  articleData: PropTypes.object.isRequired,
 }
 
 export default Article;
