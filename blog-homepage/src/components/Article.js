@@ -13,7 +13,6 @@ class Article extends React.Component {
   }
 
   handleBookmarkClick() {
-    console.log('bookmark click')
     this.setState({
       isBookmarked: !this.state.isBookmarked,
     })
