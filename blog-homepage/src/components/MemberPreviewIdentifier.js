@@ -5,18 +5,16 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const MemberPreviewIdentifier = (props) => {
   const { displayText, memberPreview } = props
+  const memberPreviewText =
+    displayText ? <span className={'article-identifier-text'}>Member preview</span> : null;
 
   return (
-    <div className={'article-identifiers'}>
-      { memberPreview
-        ? <span><FontAwesomeIcon icon={faStar} /></span>
-        : null
-      }
-      { memberPreview && displayText
-        ? <span className={'article-identifier-text'}>Member preview</span>
-        : null
-      }
-    </div>
+    memberPreview
+      ? <span>
+          <FontAwesomeIcon icon={faStar} />
+          {memberPreviewText}
+        </span>
+      : null
   );
 }
 

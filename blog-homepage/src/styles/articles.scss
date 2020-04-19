@@ -81,6 +81,11 @@
     >p {
       color: dimgray;
     }
+    >.article-identifiers {
+      >span:nth-of-type(2) {
+        float: right;
+      }
+    }
     >.author-container {
       position: absolute;
       bottom: 0;
@@ -126,4 +131,8 @@
     grid-area: bookmark;
     text-align: right;
   }
+}
+
+.article-identifier-text {
+  padding-left: 0.5em;
 }
