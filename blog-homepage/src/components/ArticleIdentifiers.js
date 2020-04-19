@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 import MemberPreviewIdentifier from './MemberPreviewIdentifier';
 
 const ArticleIdentifiers = (props) => {
@@ -9,7 +11,10 @@ const ArticleIdentifiers = (props) => {
     <div className={'article-identifiers'}>
       { hasAudioAvailable
         ? <span>
-            a
+            <FontAwesomeIcon icon={faVolumeUp} />
+            <span className={'article-identifier-text'}>
+              Audio available
+            </span>
           </span>
         : null
       }

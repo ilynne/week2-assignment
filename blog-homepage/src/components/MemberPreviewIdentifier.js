@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const MemberPreviewIdentifier = (props) => {
   const { displayText, memberPreview } = props
@@ -7,11 +9,11 @@ const MemberPreviewIdentifier = (props) => {
   return (
     <div className={'article-identifiers'}>
       { memberPreview
-        ? <span>*</span>
+        ? <span><FontAwesomeIcon icon={faStar} /></span>
         : null
       }
       { memberPreview && displayText
-        ? <span>Member preview</span>
+        ? <span className={'article-identifier-text'}>Member preview</span>
         : null
       }
     </div>

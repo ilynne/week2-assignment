@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 import AuthorImage from './AuthorImage';
 
 const Author = (props) => {
@@ -18,7 +20,7 @@ const Author = (props) => {
         <p>{postedDate} * {minutesToRead}</p>
       </div>
       <div className={'bookmark'}>
-        bkmk
+        <FontAwesomeIcon icon={faBookmark} />
       </div>
     </div>
   );
