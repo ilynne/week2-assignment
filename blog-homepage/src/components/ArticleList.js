@@ -22,6 +22,7 @@ const ArticleList = (props) => {
 }
 
 ArticleList.propTypes = {
+  className: PropTypes.string.isRequired,
   heading: PropTypes.string.isRequired,
   articleListData: PropTypes.arrayOf(PropTypes.object),
 }
