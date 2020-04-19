@@ -160,3 +160,13 @@ a {
 .bookmarked {
   color: green;
 }
+
+@media screen and (max-width: 1023px) {
+  .your-article-list, .missed-article-list {
+    >.article-list-container {
+      .article-container {
+        width: 100%;
+      }
+    }
+  }
+}
