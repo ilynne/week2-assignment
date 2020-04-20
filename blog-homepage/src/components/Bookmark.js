@@ -9,11 +9,11 @@ const Bookmark = (props) => {
 
   return (
     <div
-      className={'bookmark'}
-      onClick={handleBookmarkClick}>
+      className={'bookmark'}>
       <FontAwesomeIcon
         icon={isBookmarked ? fasBookmark : faBookmark}
         className={isBookmarked ? 'bookmarked' : ''}
+        onClick={handleBookmarkClick}
       />
     </div>
   );
