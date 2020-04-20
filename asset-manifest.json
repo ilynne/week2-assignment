@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/week2-assignment/static/css/main.0ba440ac.chunk.css",
-    "main.js": "/week2-assignment/static/js/main.98cb3021.chunk.js",
-    "main.js.map": "/week2-assignment/static/js/main.98cb3021.chunk.js.map",
+    "main.js": "/week2-assignment/static/js/main.239c715f.chunk.js",
+    "main.js.map": "/week2-assignment/static/js/main.239c715f.chunk.js.map",
     "runtime-main.js": "/week2-assignment/static/js/runtime-main.c5357b7d.js",
     "runtime-main.js.map": "/week2-assignment/static/js/runtime-main.c5357b7d.js.map",
     "static/js/2.e1ca4f0b.chunk.js": "/week2-assignment/static/js/2.e1ca4f0b.chunk.js",
     "static/js/2.e1ca4f0b.chunk.js.map": "/week2-assignment/static/js/2.e1ca4f0b.chunk.js.map",
     "index.html": "/week2-assignment/index.html",
-    "precache-manifest.331514211f60f839179ec1d1d54bb98c.js": "/week2-assignment/precache-manifest.331514211f60f839179ec1d1d54bb98c.js",
+    "precache-manifest.a45d1f95c7061edb18bd98f437bf9f82.js": "/week2-assignment/precache-manifest.a45d1f95c7061edb18bd98f437bf9f82.js",
     "service-worker.js": "/week2-assignment/service-worker.js",
     "static/css/main.0ba440ac.chunk.css.map": "/week2-assignment/static/css/main.0ba440ac.chunk.css.map",
     "static/js/2.e1ca4f0b.chunk.js.LICENSE.txt": "/week2-assignment/static/js/2.e1ca4f0b.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c5357b7d.js",
     "static/js/2.e1ca4f0b.chunk.js",
     "static/css/main.0ba440ac.chunk.css",
-    "static/js/main.98cb3021.chunk.js"
+    "static/js/main.239c715f.chunk.js"
   ]
 }
